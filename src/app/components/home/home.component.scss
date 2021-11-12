@@ -1,0 +1,424 @@
+.main-container{
+    margin-top: 2rem;
+    max-width: 90%;
+    .header-container{
+        .grade{
+            background-color: #7f8add;
+            border-radius: 15px;
+            display: flex;
+            padding: 15px;
+            height: 350px;
+            .header-list{
+                height: 70px;
+                .grade-dropdown{
+                    button{
+                        background-color: #ffffff;
+                        width: 90%;
+                        text-align: left;
+                        line-height: 0.7;
+                    }
+                    input{
+                        background-color: #ffffff;
+                        width: 90%;
+                        text-align: left;
+                        height: 1.7rem !important;
+                        padding: unset;
+                    }
+                }
+            }
+            .heading{
+                font-weight: bold;
+                color: #ffffff;
+                background-color: #3f4a9c;
+                border-radius: 15px;
+                height: 250px;
+                .title{
+                    margin-bottom: 0px;
+                    margin-top: 7px;
+                    margin-left: 10px;
+                }
+                .garph{
+                    display: flex;
+                    background-color: #39428c;
+                    border-radius: 15px;
+                    justify-content: space-around;
+                }
+            }
+        }
+        .overdue{
+            background-color: #ffffff;
+            border-radius: 15px;
+            display: flex;
+            padding: 15px; 
+            margin-left: 1rem;
+            height: 350px;
+            .navigation{
+                text-align: right;
+                .left{
+                    transform: rotate(180deg);
+                    margin-right: 25px;
+                    cursor: pointer;
+                }
+                .right{
+                    cursor: pointer;
+                }
+            }
+            .main-content{
+                .overdue-card{
+                    border-style: solid;
+                    border-width: 1px;
+                    border-radius: 15px;
+                    border-color: #caccd0;
+                    box-shadow: 0px 5px 5px #f2f0f0;
+                    .header{
+                        display: flex;
+                        margin: 5px;
+                        // text-align: center;
+                        .img{
+                            display: flex;
+                            align-items: center;
+                        }
+                        .content2{
+                            margin-left: .5rem;
+                            .name{
+                                margin-bottom: 0px;
+                            }
+                            .Job{
+                                color: #aeafb7;
+                                font-size: 14px;
+                                margin-bottom: 0px;
+                            }
+                        }
+                    }
+                    .content{
+                        border-top: 1px solid #f2f2f2;
+                        margin: 5px;
+                        .date{
+                            margin-bottom: 0px;
+                        }
+                        .time{
+                            color: #aeafb7;
+                            font-size: 14px;
+                        }
+                    }
+                    .footer{
+                        display: flex;
+                        justify-content: space-around;
+                        border-top: 1px solid #f2f2f2;
+                        margin: 5px;
+                        .action{
+                            position: relative;
+                            text-align: center;
+                            img{
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer{
+                text-align: right;
+                margin-top: 10px;
+                p{
+                    margin-bottom: 0px;
+                    color: #44487c;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .body-container{
+        margin-top: 2rem;
+        position: relative;
+        nav{
+            display: flex;
+            .nav{
+                // width: 80%;
+                border-bottom: unset !important;
+                background-color: #fff;
+                padding: 5px 25px;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                .nav-link.active{
+                    color: #4953a1;
+                    border-color: unset !important;
+                    border: unset;
+                }
+                .nav-link{
+                    color: #bdbdbd;
+                    border-color: unset !important;
+                    border: unset;
+                }
+                .tab-list{
+                    display: flex;
+                    margin-left: 2rem;
+                    background-color: #fff;
+                    padding-left: 2rem;
+                    padding-right: 2rem;
+                    line-height: 2.5rem;
+                    button::after{
+                        margin-right: 1rem;
+                    }
+                }
+            }
+        }
+        .right-content{
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            label{
+                color: #939ca7;
+            }
+            .dropdown{
+                button{
+                    margin-left: 20px;
+                    background-color: #ffffff;
+                    text-align: left;
+                    line-height: 0.7;
+                }
+            }
+        }
+    }
+}
+.tab-content{
+    background-color: #fff;
+    box-shadow: 10px 0px 19px 10px #f2f0f0;
+    .secondary-container{
+        max-width: 90%;
+        margin-top: 0px;
+        .preview-content{
+            display: flex;
+            padding-top: 2.5rem;
+            .create-card{
+                width: 250px;
+                height: 200px;
+                border-radius: 15px;
+                text-align: center;
+                color: #fff;
+                font-weight: bold;
+                position: relative;
+                background-image: linear-gradient(to right, #aaaed2, #5964b7);
+                div{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    img{
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+            
+        .overdue{
+            background-color: #ffffff;
+            border-radius: 15px;
+            display: flex;
+            margin-left: 1rem;
+            .main-content{
+                display: flex;
+                .overdue-card{
+                    border-style: solid;
+                    border-width: 1px;
+                    border-radius: 15px;
+                    border-color: #caccd0;
+                    box-shadow: 0px 5px 5px #f2f0f0;
+                    height: 230px;
+                    width: 300px;
+                    margin-right: 1.5rem;
+                    .header{
+                        display: flex;
+                        margin: 5px;
+                        position: relative;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        // text-align: center;
+                        .content2{
+                            margin-left: .5rem;
+                            .name{
+                                margin-bottom: 0px;
+                                font-size: 22px;
+                            }
+                            .Job{
+                                font-size: 14px;
+                                font-weight: bold;
+                                margin-bottom: 0px;
+                            }
+                        }
+                        .completed{
+                            position: absolute;
+                            top: 3px;
+                            right: -5px;
+                            background-color: #4885bc;
+                            padding-right: 10px;
+                            padding-left: 10px;
+                            border-top-left-radius: 15px;
+                            border-bottom-left-radius: 15px;
+                            color: #fff;
+                        }
+                        .active{
+                            position: absolute;
+                            top: 3px;
+                            right: -5px;
+                            background-color: #28c76f;
+                            padding-right: 10px;
+                            padding-left: 10px;
+                            border-top-left-radius: 15px;
+                            border-bottom-left-radius: 15px;
+                            color: #fff;
+                        }
+                        .notstarted{
+                            position: absolute;
+                            top: 3px;
+                            right: -5px;
+                            background-color: #ff8a22;
+                            padding-right: 10px;
+                            padding-left: 10px;
+                            border-top-left-radius: 15px;
+                            border-bottom-left-radius: 15px;
+                            color: #fff;
+                        }
+                    }
+                    .content{
+                        border-top: 1px solid #f2f2f2;
+                        margin: 5px;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        position: relative;
+                        .date{
+                            margin-bottom: 0px;
+                            color: #aeafb7;
+                        }
+                        .time{
+                            position: absolute;
+                            color: #aeafb7;
+                            font-size: 14px;
+                            top: 5px;
+                            right: 0;
+                            font-weight: bold;
+                        }
+                        .content-2{
+                            position: relative;
+                            width: 100%;
+                            margin-top: 10px;
+                            .img{
+                                width: 60%;
+                                position: relative;
+                                .img1{
+    
+                                }
+                                .img2{
+                                    position: absolute;
+                                    top: 0;
+                                    left: 15px;
+                                }
+                                .img3{
+                                    position: absolute;
+                                    top: 0;
+                                    left: 30px;
+                                }
+                            }
+                            .action{
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                button{
+                                    background: unset;
+                                    border-color: #6168a9;
+                                    border-radius: 9px;
+                                    color: #6168a9;
+                                    span{
+                                        padding-right: 5px;
+                                        img{
+                                            transform: rotate(45deg);
+                                            margin: 6px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .footer{
+                        .completed{
+                            display: flex;
+                            justify-content: space-around;
+                            border-top: 1px solid #f2f2f2;
+                            margin: 5px;
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                            .action{
+                                position: relative;
+                                text-align: center;
+                                span{
+                                    color: #555555;
+                                    .total{
+                                        color: #d8d8d8;
+                                        font-size: 14px;
+                                    }
+                                }
+                                .complete{
+                                    color: #5dd492;
+                                }
+                                .overdue{
+                                    color: #ffba98;
+                                }
+                                .request{
+                                    color: #6271e9;
+                                }
+                            }
+                        }
+                        .Active{
+                            display: flex;
+                            justify-content: space-between;
+                            border-top: 1px solid #f2f2f2;
+                            margin: 5px;
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                            padding: 20px;
+                            p{
+                                color: #aeafb7;
+                                span{
+                                    font-size: 20px;
+                                    color: #555555;
+                                }
+                            }
+                        }
+                        .notstarted{
+                            display: flex;
+                            justify-content: right;
+                            border-top: 1px solid #f2f2f2;
+                            margin: 5px;
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                            padding-top: 20px;
+                            .delete{
+                                background: unset;
+                                background-color: unset;
+                                padding: 2px 10px;
+                                border-style: unset;
+                                border-radius: 7px;
+                                color: #fff;
+                                background-color: #eb5757;
+                                font-weight: bold;
+                                margin-right: 1rem;
+                            }
+                            .edit{
+                                background: unset;
+                                background-color: unset;
+                                padding: 2px 10px;
+                                border-style: unset;
+                                border-radius: 7px;
+                                color: #fff;
+                                background-color: #f2994a;
+                                font-weight: bold;   
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        }
+    }
+}

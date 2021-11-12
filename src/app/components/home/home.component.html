@@ -1,0 +1,246 @@
+<div class="container main-container">
+    <h2>Praise</h2>
+    <div class="header-container row">
+        <div class="col-sm-12 col-md-8 col-lg-8">
+            <div class="grade row">
+                <div class="header-list row">
+                    <div class="col-3">
+                        <h3>Grade Statistic</h3>
+                    </div>
+                    <div class="col-9">
+                        <div class="grade-dropdown row">
+                            <div class="col-3">
+                                <label>Select Region</label>
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        All
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" value="region1">Region 1</a></li>
+                                        <li><a class="dropdown-item" value="region2">Region 1</a></li>
+                                        <li><a class="dropdown-item" value="region3">Region 1</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <label>Select Job Role</label>
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        All
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" value="region1">Region 1</a></li>
+                                        <li><a class="dropdown-item" value="region2">Region 1</a></li>
+                                        <li><a class="dropdown-item" value="region3">Region 1</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <label>Select From Date</label>
+                                <div class="dropdown">
+                                    <input type="date" class="form-control" placeholder="FromDate" aria-label="FromDate"
+                                        aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <label>Select To Date</label>
+                                <div class="dropdown">
+                                    <input type="date" class="form-control" placeholder="ToDate" aria-label="ToDate"
+                                        aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="heading">
+                    <p class="title">Grade</p>
+                    <div class="garph">
+                        <div id="chartContainer" style="height: 200px; width: 75%;margin-right: 10px;"></div>
+                        <div id="chartContainer2" style="height: 200px; width: 20%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="overdue row">
+                <div class="row">
+                    <div class="col-8">
+                        <h3>Overdue Request</h3>
+                    </div>
+                    <div class="col-4 navigation">
+                        <img class="left" src="./assets/img/next.png" width="15" height="15">
+                        <img class="right" src="./assets/img/next.png" width="15" height="15">
+                    </div>
+                </div>
+                <div class="main-content row">
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                        <div class="overdue-card">
+                            <div class="header">
+                                <div class="img">
+                                    <img src="./assets/img/user.png" width="30" height="30">
+                                </div>
+                                <div class="content2">
+                                    <p class="name">Venkat</p>
+                                    <p class="Job">Store Manger</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p class="date">Overdue of April, 2021</p>
+                                <p class="time">Requested - Today, 11:00 pm</p>
+                            </div>
+                            <div class="footer">
+                                <span class="action">Reject<br>
+                                    <span><img src="./assets/img/close.png" width="15" height="15"></span>
+                                </span>
+                                <span class="action">Accept<br>
+                                    <span><img src="./assets/img/tick.png" width="15" height="15"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                        <div class="overdue-card">
+                            <div class="header">
+                                <div class="img">
+                                    <img src="./assets/img/user.png" width="30" height="30">
+                                </div>
+                                <div class="content2">
+                                    <p class="name">Sriram</p>
+                                    <p class="Job">Store Manger</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p class="date">Overdue of April, 2021</p>
+                                <p class="time">Requested - Today, 1:00 pm</p>
+                            </div>
+                            <div class="footer">
+                                <span class="action">Reject<br>
+                                    <span><img src="./assets/img/close.png" width="15" height="15"></span>
+                                </span>
+                                <span class="action">Accept<br>
+                                    <span><img src="./assets/img/tick.png" width="15" height="15"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <p>View All</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-container">
+        <nav>
+            <div class="nav nav-tabs tab-list" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-review-tab" data-bs-toggle="tab" data-bs-target="#nav-review"
+                    type="button" role="tab" aria-controls="nav-review" aria-selected="true">Review Cycle</button>
+                <button class="nav-link" id="nav-participants-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-participants" type="button" role="tab" aria-controls="nav-participants"
+                    aria-selected="false">Participants</button>
+                <button class="nav-link" id="nav-question-tab" data-bs-toggle="tab" data-bs-target="#nav-question"
+                    type="button" role="tab" aria-controls="nav-question" aria-selected="false">Questionnaires</button>
+            </div>
+        </nav>
+        <div class="right-content">
+            <label>Select year</label>
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    2021
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" value="2020">2020</a></li>
+                    <li><a class="dropdown-item" value="2019">2019</a></li>
+                    <li><a class="dropdown-item" value="2018">2018</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="tab-content">
+    <div class="container secondary-container" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-review" role="tabpanel" aria-labelledby="nav-review-tab">
+            <div class="preview-content">
+                <div class="create-card">
+                    <div>
+                        <img class="left" src="./assets/img/close.png" width="25" height="25"><br>
+                        Create New
+                    </div>
+                </div>
+                <div class="overdue row">
+                    <div class="main-content">
+                        <div class="overdue-card" *ngFor="let data of recycledata">
+                            <div class="header">
+                                <div class="content2">
+                                    <p class="name">{{data.Date}}</p>
+                                    <p class="Job">{{data.period}}</p>
+                                </div>
+                                <div>
+                                    <span *ngIf="data.status=='Completed'" class="completed">{{data.status}}</span>
+                                    <span *ngIf="data.status=='Active'" class="active">{{data.status}}</span>
+                                    <span *ngIf="data.status=='Not Started'" class="notstarted">{{data.status}}</span>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <p class="date">Assigned Participants</p>
+                                <p class="time">See all</p>
+                                <div class="content-2">
+                                    <div class="img">
+                                        <img class="img1" src="./assets/img/user.png" width="30" height="30">
+                                        <img class="img2" src="./assets/img/user.png" width="30" height="30">
+                                        <img class="img3" src="./assets/img/user.png" width="30" height="30">
+                                    </div>
+                                    <div class="action" *ngIf="data.status!='Completed'">
+                                        <button>
+                                            <span>
+                                                <img class="rotate" src="./assets/img/close.png" width="10" height="10">Add
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <div class="completed" *ngIf="data.status=='Completed'">
+                                    <span class="action">
+                                        <span style="font-size: 20px;">{{data.completedstatus}}<span class="total">/{{data.completedtotal}}</span></span><br>
+                                        <span class="complete">Completed</span>
+                                    </span>
+                                    <span class="action">
+                                        <span style="font-size: 20px;">{{data.ovedue}}</span><br>
+                                        <span class="overdue">Overdue</span>
+                                    </span>
+                                    <span class="action">
+                                        <span style="font-size: 20px;">{{data.request}}</span><br>
+                                        <span class="request">Requests</span>
+                                    </span>
+                                </div>
+                                <div class="Active" *ngIf="data.status=='Active'">
+                                    <p>Completed</p>
+                                    <p><span>{{data.completedstatus}}</span>/{{data.completedtotal}}</p>
+                                </div>
+                                <div class="notstarted" *ngIf="data.status=='Not Started'">
+                                    <button class="delete">
+                                        <img src="./assets/img/delete.png" width="15" height="15"> Delete
+                                    </button>
+                                    <button class="edit">
+                                        <img src="./assets/img/edit.png" width="15" height="15"> Edit
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="nav-participants" role="tabpanel" aria-labelledby="nav-participants-tab">
+            Profile
+        </div>
+        <div class="tab-pane fade" id="nav-question" role="tabpanel" aria-labelledby="nav-question-tab">
+            Contact
+        </div>
+    </div>
+</div>

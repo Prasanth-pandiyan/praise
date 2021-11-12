@@ -1,0 +1,33 @@
+<div class="main-layout">
+    <div class="header-layout">
+        <nav class="navbar navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" routerLink="/">Praise</a>
+              <div class="right-content">
+                  <p class="profile-name">Manager Test<br>(Participant)</p>
+                  <div class="notification-badge">
+                    <img src="./assets/img/notification.png" width="25" height="25">
+                    <span class="notification-badge-count">6</span>
+                  </div>
+                  <img class="profile-pic" src="./assets/img/user.png" width="25" height="25">
+              </div>
+            </div>
+          </nav>
+    </div>
+    <div class="body-layout">
+      <div class="menu-layout">
+        <ul>
+          <li><img src="./assets/img/home.png"></li>
+          <li><img src="./assets/img/lamp.png"></li>
+          <li><img src="./assets/img/building.png"></li>
+          <li><img src="./assets/img/event.png"></li>
+          <li><img src="./assets/img/calendar.png"></li>
+          <li><img src="./assets/img/trophy.png"></li>
+          <li><img src="./assets/img/achivement.png"></li>
+        </ul>
+      </div>
+      <div class="main-layout">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+</div>
