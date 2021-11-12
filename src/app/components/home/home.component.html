@@ -164,71 +164,75 @@
 <div class="tab-content">
     <div class="container secondary-container" id="nav-tabContent">
         <div class="tab-pane fade show active" id="nav-review" role="tabpanel" aria-labelledby="nav-review-tab">
-            <div class="preview-content">
-                <div class="create-card">
-                    <div>
-                        <img class="left" src="./assets/img/close.png" width="25" height="25"><br>
-                        Create New
+            <div class="preview-content row">
+                <div class=" col-sm-12 col-md-2 col-lg-2">
+                    <div class="create-card">
+                        <div>
+                            <img class="left" src="./assets/img/close.png" width="25" height="25"><br>
+                            Create New
+                        </div>
                     </div>
                 </div>
-                <div class="overdue row">
-                    <div class="main-content">
-                        <div class="overdue-card" *ngFor="let data of recycledata">
-                            <div class="header">
-                                <div class="content2">
-                                    <p class="name">{{data.Date}}</p>
-                                    <p class="Job">{{data.period}}</p>
-                                </div>
-                                <div>
-                                    <span *ngIf="data.status=='Completed'" class="completed">{{data.status}}</span>
-                                    <span *ngIf="data.status=='Active'" class="active">{{data.status}}</span>
-                                    <span *ngIf="data.status=='Not Started'" class="notstarted">{{data.status}}</span>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <p class="date">Assigned Participants</p>
-                                <p class="time">See all</p>
-                                <div class="content-2">
-                                    <div class="img">
-                                        <img class="img1" src="./assets/img/user.png" width="30" height="30">
-                                        <img class="img2" src="./assets/img/user.png" width="30" height="30">
-                                        <img class="img3" src="./assets/img/user.png" width="30" height="30">
+                <div class="overdue col-sm-12 col-md-10 col-lg-10">
+                    <div class="main-content row">
+                        <div class="col-sm-12 col-md-3 col-lg-3" *ngFor="let data of recycledata">
+                            <div class="overdue-card" >
+                                <div class="header">
+                                    <div class="content2">
+                                        <p class="name">{{data.Date}}</p>
+                                        <p class="Job">{{data.period}}</p>
                                     </div>
-                                    <div class="action" *ngIf="data.status!='Completed'">
-                                        <button>
-                                            <span>
-                                                <img class="rotate" src="./assets/img/close.png" width="10" height="10">Add
-                                            </span>
+                                    <div>
+                                        <span *ngIf="data.status=='Completed'" class="completed">{{data.status}}</span>
+                                        <span *ngIf="data.status=='Active'" class="active">{{data.status}}</span>
+                                        <span *ngIf="data.status=='Not Started'" class="notstarted">{{data.status}}</span>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <p class="date">Assigned Participants</p>
+                                    <p class="time">See all</p>
+                                    <div class="content-2">
+                                        <div class="img">
+                                            <img class="img1" src="./assets/img/user.png" width="30" height="30">
+                                            <img class="img2" src="./assets/img/user.png" width="30" height="30">
+                                            <img class="img3" src="./assets/img/user.png" width="30" height="30">
+                                        </div>
+                                        <div class="action" *ngIf="data.status!='Completed'">
+                                            <button>
+                                                <span>
+                                                    <img class="rotate" src="./assets/img/close.png" width="10" height="10">Add
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <div class="completed" *ngIf="data.status=='Completed'">
+                                        <span class="action">
+                                            <span style="font-size: 20px;">{{data.completedstatus}}<span class="total">/{{data.completedtotal}}</span></span><br>
+                                            <span class="complete">Completed</span>
+                                        </span>
+                                        <span class="action">
+                                            <span style="font-size: 20px;">{{data.ovedue}}</span><br>
+                                            <span class="overdue">Overdue</span>
+                                        </span>
+                                        <span class="action">
+                                            <span style="font-size: 20px;">{{data.request}}</span><br>
+                                            <span class="request">Requests</span>
+                                        </span>
+                                    </div>
+                                    <div class="Active" *ngIf="data.status=='Active'">
+                                        <p>Completed</p>
+                                        <p><span>{{data.completedstatus}}</span>/{{data.completedtotal}}</p>
+                                    </div>
+                                    <div class="notstarted" *ngIf="data.status=='Not Started'">
+                                        <button class="delete">
+                                            <img src="./assets/img/delete.png" width="15" height="15"> Delete
+                                        </button>
+                                        <button class="edit">
+                                            <img src="./assets/img/edit.png" width="15" height="15"> Edit
                                         </button>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="footer">
-                                <div class="completed" *ngIf="data.status=='Completed'">
-                                    <span class="action">
-                                        <span style="font-size: 20px;">{{data.completedstatus}}<span class="total">/{{data.completedtotal}}</span></span><br>
-                                        <span class="complete">Completed</span>
-                                    </span>
-                                    <span class="action">
-                                        <span style="font-size: 20px;">{{data.ovedue}}</span><br>
-                                        <span class="overdue">Overdue</span>
-                                    </span>
-                                    <span class="action">
-                                        <span style="font-size: 20px;">{{data.request}}</span><br>
-                                        <span class="request">Requests</span>
-                                    </span>
-                                </div>
-                                <div class="Active" *ngIf="data.status=='Active'">
-                                    <p>Completed</p>
-                                    <p><span>{{data.completedstatus}}</span>/{{data.completedtotal}}</p>
-                                </div>
-                                <div class="notstarted" *ngIf="data.status=='Not Started'">
-                                    <button class="delete">
-                                        <img src="./assets/img/delete.png" width="15" height="15"> Delete
-                                    </button>
-                                    <button class="edit">
-                                        <img src="./assets/img/edit.png" width="15" height="15"> Edit
-                                    </button>
                                 </div>
                             </div>
                         </div>

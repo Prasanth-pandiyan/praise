@@ -51,7 +51,7 @@
             display: flex;
             padding: 15px; 
             margin-left: 1rem;
-            height: 350px;
+            min-height: 350px;
             .navigation{
                 text-align: right;
                 .left{
@@ -187,13 +187,13 @@
     background-color: #fff;
     box-shadow: 10px 0px 19px 10px #f2f0f0;
     .secondary-container{
-        max-width: 90%;
+        max-width: 95%;
         margin-top: 0px;
         .preview-content{
             display: flex;
             padding-top: 2.5rem;
             .create-card{
-                width: 250px;
+                // width: 250px;
                 height: 200px;
                 border-radius: 15px;
                 text-align: center;
@@ -216,9 +216,10 @@
             background-color: #ffffff;
             border-radius: 15px;
             display: flex;
-            margin-left: 1rem;
+            // margin-left: 1rem;
             .main-content{
                 display: flex;
+                width: 100%;
                 .overdue-card{
                     border-style: solid;
                     border-width: 1px;
@@ -226,8 +227,8 @@
                     border-color: #caccd0;
                     box-shadow: 0px 5px 5px #f2f0f0;
                     height: 230px;
-                    width: 300px;
-                    margin-right: 1.5rem;
+                    // width: 300px;
+                    // margin-right: 1.5rem;
                     .header{
                         display: flex;
                         margin: 5px;
